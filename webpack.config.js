@@ -20,13 +20,16 @@ module.exports = {
 				use: 'babel-loader',
 			},
 			{
-				test: /\.css$/,
-				exclude: /node_modules/,
+				test: /\.css$/i,
 				use: [
+					'style-loader',
 					{
-						loader: MiniCssExtractPlugin.loader,
+						loader: 'css-loader',
+						options: {
+							importLoaders: 1,
+						},
 					},
-					'css-loader',
+					'postcss-loader',
 				],
 			},
 			{
@@ -51,6 +54,7 @@ module.exports = {
 			template: path.resolve(__dirname, 'public/index.html'),
 			filename: 'index.html',
 		}),
+		new MiniCssExtractPlugin(),
 	],
 	resolve: {
 		alias: {

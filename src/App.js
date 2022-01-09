@@ -1,11 +1,11 @@
 import React from 'react';
-import image from './assets/cr7.png';
+
+import './index.css';
 class App extends React.Component {
 	render() {
 		return (
-			<div>
-				<p>Hello World hehe</p>
-				<img src={image}></img>
+			<div className="bg-green-700 flex">
+				<p className="text-4xl">Hello World hehe</p>
 			</div>
 		);
 	}
