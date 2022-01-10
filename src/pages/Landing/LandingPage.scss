@@ -1,0 +1,19 @@
+$bg-color: rgb(1, 32, 76);
+$secondary-color: #f268ea;
+
+section {
+	min-height: 100vh;
+	background-color: $bg-color;
+}
+.color {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	background: $secondary-color;
+	top: -350px;
+	left: 250px;
+	filter: blur(150px);
+}
+.container {
+	position: relative;
+}

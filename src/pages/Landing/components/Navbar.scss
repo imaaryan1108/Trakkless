@@ -1,0 +1,10 @@
+$secondary-color: #f268ea;
+
+.right-container {
+	.btn-signin {
+		border: 1px solid $secondary-color;
+	}
+	.btn-register {
+		background: $secondary-color;
+	}
+}
