@@ -1,19 +1,222 @@
-$bg-color: rgb(1, 32, 76);
-$secondary-color: #f268ea;
+@import '../../utils/ScssUtils/_variables.scss';
+@import '../../utils/ScssUtils/breakpoints.scss';
 
-section {
-	min-height: 100vh;
+.parent-container {
 	background-color: $bg-color;
-}
-.color {
-	position: absolute;
-	width: 600px;
-	height: 600px;
-	background: $secondary-color;
-	top: -350px;
-	left: 250px;
-	filter: blur(150px);
-}
-.container {
-	position: relative;
+	overflow-x: hidden;
+	height: 300vh;
+	width: 100%;
+
+	.side-nav {
+		position: absolute;
+		width: 10%;
+		height: 100%;
+		background: linear-gradient(180deg, #f267eb 0%, rgba(127, 76, 239, 0) 100%);
+		mix-blend-mode: normal;
+
+		@include xl {
+			width: 8%;
+		}
+		@include xxl {
+			width: 7%;
+		}
+
+		.twitter-logo {
+			left: 30%;
+			top: 90%;
+		}
+		.fb-logo {
+			left: 30%;
+			top: 80%;
+		}
+		.insta-logo {
+			left: 30%;
+			top: 70%;
+		}
+	}
+	.logo {
+		top: 5%;
+		left: 7%;
+
+		@include lg {
+			left: 2.5%;
+		}
+	}
+
+	.color-gradient-top {
+		@include grad(200px, 486.32px, 100px, -170px, 180px);
+		background: $secondary-color;
+
+		@include sm {
+			@include grad(360px, 400px, 110px, -145.81px, 180px);
+		}
+		@include md {
+			@include grad(400px, 400px, 150px, -145px, 180px);
+		}
+		@include lg {
+			@include grad(450px, 400px, 180px, -175px, 150px);
+		}
+		@include xl {
+			@include grad(450px, 400px, 200px, -175px, 150px);
+		}
+	}
+	.color-gradient-rightbottom {
+		position: absolute;
+		width: 244px;
+		height: 574.71px;
+		bottom: -30%;
+		right: 40%;
+		background: #1f62ea;
+		border: 1px solid #000000;
+
+		filter: blur(160px);
+		overflow-y: hidden;
+		transform: rotate(-38.84deg);
+
+		@include md {
+			right: 35%;
+		}
+
+		@include lg {
+			right: 15%;
+		}
+	}
+
+	.bottom-container {
+		.circle-one {
+			position: absolute;
+			@include lg {
+				right: -43%;
+				top: -74%;
+			}
+			@include xl {
+				right: -25% !important;
+				top: -50% !important;
+			}
+
+			@include xxl {
+				right: -14% !important;
+				top: -60% !important;
+			}
+			@include breakpoint(1920px) {
+				display: none;
+			}
+
+			.outer {
+				background: transparent;
+			}
+
+			.inner {
+				width: 95%;
+				height: 95%;
+				background: transparent;
+				border: 1px solid #fff;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: all 0.5s ease-out;
+			}
+		}
+
+		.circle-two {
+			position: absolute;
+			@include lg {
+				right: -35%;
+				top: 25%;
+			}
+			@include xl {
+				right: -22% !important;
+				top: 30% !important;
+			}
+
+			@include xxl {
+				right: -17% !important;
+				top: 28% !important;
+			}
+
+			@include breakpoint(1920px) {
+				display: none;
+			}
+
+			.outer {
+				background: transparent;
+			}
+
+			.inner {
+				width: 95%;
+				height: 95%;
+				background: transparent;
+				border: 1px solid #fff;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: all 0.5s ease-out;
+			}
+		}
+
+		.star {
+			top: 0;
+
+			@include lg {
+				right: 40%;
+			}
+			@include breakpoint(1920px) {
+				display: none;
+			}
+		}
+	}
+
+	.btn-dashboard {
+		background-color: $btn-color-ctc;
+		clip-path: polygon(
+			100% 0%,
+			70% 0%,
+			37% 0%,
+			29% 0%,
+			0% 25%,
+			0% 56%,
+			0% 76%,
+			0% 100%,
+			38% 100%,
+			53% 100%,
+			74% 100%,
+			100% 81%,
+			100% 51%,
+			100% 25%
+		);
+
+		&:before {
+			content: '';
+			width: 110px;
+			height: 38px;
+			top: 1px;
+			left: 1px;
+			background: $btn-color-ctc;
+			display: block;
+			position: absolute;
+
+			clip-path: polygon(
+				100% 0%,
+				70% 0%,
+				37% 0%,
+				29% 0%,
+				0% 25%,
+				0% 56%,
+				0% 76%,
+				0% 100%,
+				38% 100%,
+				53% 100%,
+				74% 100%,
+				100% 81%,
+				100% 51%,
+				100% 25%
+			);
+		}
+	}
+	.btn-getstarted {
+		color: $btn-color-ctc;
+	}
+	.icon-arrow {
+		color: $btn-color-ctc;
+	}
 }
