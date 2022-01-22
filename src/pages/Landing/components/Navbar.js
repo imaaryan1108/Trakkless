@@ -32,7 +32,7 @@ function Navbar() {
 			</div>
 			<div
 				onClick={() => setOpen(!open)}
-				className="absolute right-12 top-14 sm:top-12 cursor-pointer lg:hidden scale-150 z-20    "
+				className="absolute right-12 top-14 sm:top-12 cursor-pointer lg:hidden scale-150 z-20 "
 			>
 				{open ? <CloseIcon /> : <MenuIcon />}
 			</div>

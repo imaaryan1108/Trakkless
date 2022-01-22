@@ -4,7 +4,7 @@
 .parent-container {
 	background-color: $bg-color;
 	overflow-x: hidden;
-	height: 300vh;
+
 	width: 100%;
 
 	.side-nav {
@@ -218,5 +218,11 @@
 	}
 	.icon-arrow {
 		color: $btn-color-ctc;
+	}
+	.footer-top {
+		background: $footer-color;
+	}
+	.footer-bottom {
+		background: linear-gradient(180deg, #7854f7 0%, rgba(120, 84, 247, 0) 100%);
 	}
 }
