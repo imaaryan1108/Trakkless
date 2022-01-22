@@ -16,17 +16,17 @@ function Navbar() {
 				}`}
 			>
 				<div className="flex grow flex-col lg:flex-row font-semibold lg:text-xl md:text-lg lg:w-1/4 w-full items-center lg:justify-evenly lg:ml-24 lg:pl-12 lg:mt-0 mt-36 ">
-					<span className="lg:my-0 my-5 ">Explore</span>
-					<span className="lg:my-0 my-5 ">About us</span>
-					<span className="lg:my-0 my-5 whitespace-nowrap">How It Works</span>
+					<span className="lg:my-0 my-5 cursor-pointer">Explore</span>
+					<span className="lg:my-0 my-5 cursor-pointer">About us</span>
+					<span className="lg:my-0 my-5 whitespace-nowrap cursor-pointer">How It Works</span>
 				</div>
 
 				<div className="flex flex-col lg:flex-row lg:grow lg:justify-end right-container lg:pr-20 lg:ml-12  ">
-					<div className="btn-signin w-28 flex items-center justify-center p-2 lg:mx-4 mx-auto ">
-						<span className="z-10 lg:my-0">Sign In</span>
+					<div className="btn-signin w-28 flex items-center justify-center p-2 lg:mx-4 mx-auto cursor-pointer">
+						<span className="z-10 lg:my-0 ">Sign In</span>
 					</div>
-					<div className="btn-register w-28 flex items-center justify-center rounded-sm p-2 lg:mx-4 lg:my-0 my-8 mx-auto ">
-						<span className="z-10 lg:my-0">Register</span>
+					<div className="btn-register w-28 flex items-center justify-center rounded-sm p-2 lg:mx-4 lg:my-0 my-8 mx-auto cursor-pointer ">
+						<span className="z-10 lg:my-0 ">Register</span>
 					</div>
 				</div>
 			</div>
