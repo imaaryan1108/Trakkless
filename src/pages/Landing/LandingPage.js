@@ -8,10 +8,11 @@ import logo from '../../assets/logo.svg';
 import TwitterLogo from '../../assets/TwitterLogo.svg';
 import InstaLogo from '../../assets/InstaLogo.svg';
 import FbLogo from '../../assets/FbLogo.svg';
+import tutorial from '../../assets/tutorial.svg';
 
 function LandingPage() {
 	return (
-		<div className="parent-container">
+		<div className="parent-container h-full">
 			<div className="color-gradient-top absolute left-0 top-0"></div>
 			<div className="color-gradient-rightbottom"></div>
 			<img className="logo absolute h-12 w-9 z-50" src={logo} alt="logo"></img>
@@ -24,7 +25,7 @@ function LandingPage() {
 			<div className="relative">
 				<Navbar />{' '}
 			</div>
-			<div className="bottom-container relative flex flex-col w-full ">
+			<div className="bottom-container relative flex flex-col w-full">
 				<div className="absolute circle-one opacity-25 hidden lg:inline-flex ">
 					<div className="outer mx-auto rounded-full relative m-[10px] w-[1000px] h-[1000px]">
 						<div className="inner absolute rounded-full"></div>
@@ -62,6 +63,56 @@ function LandingPage() {
 					<div className="xl:mr-24 lg:mr-16 md:-mr-10 xl:scale-100 lg:scale-75 lg:mx-0 md:scale-75 scale-[0.7]  md:ml-0 lg:ml-0 -ml-14">
 						<DisplayCard />
 					</div>
+				</div>
+			</div>
+			<div className="flex flex-col text-white lg:ml-40 sm:ml-12 lg:mt-44">
+				<span className="uppercase sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
+					a new approach to A Better
+					<br /> solution for <br /> <span className="font-semibold leading-6">
+						{' '}
+						Tracking your Journey{' '}
+					</span>{' '}
+				</span>
+				<span className="sm:mt-5 lg:mt-10 sm:w-3/5 sm:text-sm lg:text-xl">
+					Lorem ipsum dolor sit amet. Ut voluptas officia est enim voluptatem et pariatur temporibus non quae
+					delectus et numquam suscipit. Quo repellendus odio ea modi aspernatur At praesentium distinctio quo
+					aspernatur provident.Lorem ipsum dolor sit amet. Ut voluptas officia est enim voluptatem et
+				</span>
+				<div className="flex sm:mt-7 md:mt-10 lg:mt-32">
+					<div className="sm:w-28 sm:h-10 lg:w-56 lg:h-14 bg-white sm:text-sm lg:text-base text-black font-bold rounded-md flex justify-center items-center lg:py-1 lg:px-6 ">
+						How it works
+					</div>
+					<div className="sm:w-28 sm:h-10 lg:w-56 lg:h-14 bg-transparent sm:text-sm lg:text-base text-white sm:ml-12 lg:ml-24 font-bold rounded-md border-white border-2 flex justify-center items-center lg:py-1 lg:px-6 ">
+						Watch tutorial
+					</div>
+				</div>
+				<div className="sm:mt-28 lg:mt-52 sm:grid-cols-2 sm:grid grid-cols-3 md:gap-y-28 lg:gap-y-48 overflow-hidden">
+					<img className="lg:scale-150" src={tutorial}></img>
+					<img className="lg:scale-150" src={tutorial}></img>
+					<img className="lg:scale-150" src={tutorial}></img>
+					<img className="lg:scale-150" src={tutorial}></img>
+					<img className="lg:scale-150" src={tutorial}></img>
+					<img className="lg:scale-150" src={tutorial}></img>
+				</div>
+			</div>
+			<div className="text-white flex justify-between overflow-hidden md:mt-16 lg:mt-48 footer-top sm:py-6 lg:py-9	">
+				<div className="flex justify-center items-center sm:text-base md:text-xl lg:text-2xl xl:text-3xl sm:ml-14 lg:ml-28">
+					TrakkLess - the most customizable tracking platform for your Placement
+				</div>
+				<div className="flex justify-center items-center md:text-sm text-base sm:w-32 md:w-40 md:h-12 sm:mr-12 lg:mr-24 border-2 border-white rounded-3xl">
+					Get Started
+				</div>
+			</div>
+			<div className="flex text-white 	h-44 items-center footer-bottom">
+				<div className="flex flex-col sm:ml-12 lg:ml-52">
+					<span className="font-semibold uppercase text-sm">Who we are</span>
+					<span className="text-xs">About</span>
+					<span className="text-xs">Team</span>
+				</div>
+				<div className="flex flex-col sm:ml-12 lg:ml-24">
+					<span className="font-semibold uppercase text-sm">Other Products</span>
+					<span className="text-xs">Housify</span>
+					<span className="text-xs">AvDesigns</span>
 				</div>
 			</div>
 		</div>
