@@ -12,7 +12,7 @@ import tutorial from '../../assets/tutorial.svg';
 
 function LandingPage() {
 	return (
-		<div className="parent-container h-full">
+		<article className="parent-container h-full">
 			<div className="color-gradient-top absolute left-0 top-0"></div>
 			<div className="color-gradient-rightbottom"></div>
 			<img className="logo absolute h-12 w-9 z-50" src={logo} alt="logo"></img>
@@ -65,28 +65,28 @@ function LandingPage() {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col text-white lg:ml-40 sm:ml-12 lg:mt-44">
-				<span className="uppercase sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
+			<div className="flex flex-col text-white  lg:ml-40 sm:ml-12 ml-9 lg:mt-44">
+				<span className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
 					a new approach to A Better
 					<br /> solution for <br /> <span className="font-semibold leading-6">
 						{' '}
 						Tracking your Journey{' '}
 					</span>{' '}
 				</span>
-				<span className="sm:mt-5 lg:mt-10 sm:w-3/5 sm:text-sm lg:text-xl">
+				<span className="mt-5 lg:mt-10 w-4/5 sm:w-3/5 text-xs  sm:text-sm lg:text-xl">
 					Lorem ipsum dolor sit amet. Ut voluptas officia est enim voluptatem et pariatur temporibus non quae
 					delectus et numquam suscipit. Quo repellendus odio ea modi aspernatur At praesentium distinctio quo
 					aspernatur provident.Lorem ipsum dolor sit amet. Ut voluptas officia est enim voluptatem et
 				</span>
-				<div className="flex sm:mt-7 md:mt-10 lg:mt-32">
-					<div className="sm:w-28 sm:h-10 lg:w-56 lg:h-14 bg-white sm:text-sm lg:text-base text-black font-bold rounded-md flex justify-center items-center lg:py-1 lg:px-6 ">
+				<div className="flex mt-5 sm:mt-7 md:mt-10 lg:mt-32">
+					<button className="sm:w-36 sm:h-10 md:h-12 lg:w-56 lg:h-14 bg-white text-xs sm:text-sm lg:text-base text-black font-bold rounded-md flex justify-center items-center py-1 px-6 ">
 						How it works
-					</div>
-					<div className="sm:w-28 sm:h-10 lg:w-56 lg:h-14 bg-transparent sm:text-sm lg:text-base text-white sm:ml-12 lg:ml-24 font-bold rounded-md border-white border-2 flex justify-center items-center lg:py-1 lg:px-6 ">
+					</button>
+					<button className="sm:w-40 sm:h-10 lg:w-56 lg:h-14 bg-transparent text-xs sm:text-sm lg:text-base text-white ml-8 sm:ml-12 lg:ml-16 font-bold rounded-md border-white border-2 flex justify-center items-center py-1 px-6 ">
 						Watch tutorial
-					</div>
+					</button>
 				</div>
-				<div className="sm:mt-28 lg:mt-52 sm:grid-cols-2 sm:grid grid-cols-3 md:gap-y-28 lg:gap-y-48 overflow-hidden">
+				<div className="mt-28 lg:mt-52 grid grid-cols-2 md:grid-cols-3 md:gap-y-28 lg:gap-y-48 overflow-hidden">
 					<img className="lg:scale-150" src={tutorial}></img>
 					<img className="lg:scale-150" src={tutorial}></img>
 					<img className="lg:scale-150" src={tutorial}></img>
@@ -95,27 +95,27 @@ function LandingPage() {
 					<img className="lg:scale-150" src={tutorial}></img>
 				</div>
 			</div>
-			<div className="text-white flex justify-between overflow-hidden md:mt-16 lg:mt-48 footer-top sm:py-6 lg:py-9	">
-				<div className="flex justify-center items-center sm:text-base md:text-xl lg:text-2xl xl:text-3xl sm:ml-14 lg:ml-28">
+			<div className="text-white flex justify-between overflow-hidden md:mt-16 lg:mt-48 footer-top py-4 sm:py-6 lg:py-9	">
+				<div className="flex justify-center items-center w-3/4 sm:w-4/5 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl ml-8 sm:ml-14 lg:ml-28">
 					TrakkLess - the most customizable tracking platform for your Placement
 				</div>
-				<div className="flex justify-center items-center md:text-sm text-base sm:w-32 md:w-40 md:h-12 sm:mr-12 lg:mr-24 border-2 border-white rounded-3xl">
+				<button className="flex justify-center items-center text-xs md:text-sm lg:text-base w-24 sm:w-32 md:w-40 h-6 md:h-10 mt-2 sm:mt-0 mr-6 sm:mr-6 md:mr-12 lg:mr-24 border-2 border-white rounded-3xl">
 					Get Started
-				</div>
+				</button>
 			</div>
-			<div className="flex text-white 	h-44 items-center footer-bottom">
-				<div className="flex flex-col sm:ml-12 lg:ml-52">
-					<span className="font-semibold uppercase text-sm">Who we are</span>
-					<span className="text-xs">About</span>
+			<div className="flex text-white h-24 sm:h-32 md:h-44 items-center footer-bottom">
+				<div className="flex flex-col ml-12 lg:ml-52">
+					<span className="font-semibold uppercase text-xs sm:text-sm">Who we are</span>
+					<span className="text-xs mt-3">About</span>
 					<span className="text-xs">Team</span>
 				</div>
-				<div className="flex flex-col sm:ml-12 lg:ml-24">
-					<span className="font-semibold uppercase text-sm">Other Products</span>
-					<span className="text-xs">Housify</span>
+				<div className="flex flex-col ml-12 lg:ml-24">
+					<span className="font-semibold uppercase text-xs sm:text-sm">Other Products</span>
+					<span className="text-xs mt-3">Housify</span>
 					<span className="text-xs">AvDesigns</span>
 				</div>
 			</div>
-		</div>
+		</article>
 	);
 }
 
